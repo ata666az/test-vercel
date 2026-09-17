@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "regions": ["sin1"],
+  "functions": {
+    "api/proxy.js": { "runtime": "edge" }
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/proxy" }
+  ]
+}
